@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const DISCORD_INVITE = "https://discord.gg/ВСТАВЬТЕ_ССЫЛКУ";
+const DISCORD_INVITE = "https://discord.gg/invite/derzhava";
 
 const channels = [
   {
