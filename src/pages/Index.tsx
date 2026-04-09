@@ -77,6 +77,18 @@ const channels = [
     ],
   },
   {
+    category: "⚙️ Тех. специалисты",
+    items: [
+      { name: "новости-тех", locked: false, emoji: "📰" },
+      { name: "общение-тех", locked: false, emoji: "💬" },
+    ],
+    voice: [
+      "🔩 Общая комната 1",
+      "🔩 Общая комната 2",
+      "🛠️ Руководство",
+    ],
+  },
+  {
     category: "🚪 Личные комнаты",
     items: [
       { name: "создать-свою-комнату", locked: false },
