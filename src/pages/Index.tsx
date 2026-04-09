@@ -39,20 +39,23 @@ const channels = [
   {
     category: "🏛️ Гос. фракции",
     items: [
-      { name: "мэрия-москвы", locked: false },
-      { name: "полиция-гувд", locked: false },
-      { name: "фсб-отдел", locked: false },
-      { name: "прокуратура", locked: false },
-      { name: "скорая-помощь", locked: false },
+      { name: "правительство", locked: false },
+      { name: "фсб", locked: false },
+      { name: "армия", locked: false },
+      { name: "гибдд", locked: false },
+      { name: "умвд", locked: false },
+      { name: "цб", locked: false },
+      { name: "сми", locked: false },
+      { name: "фсин", locked: false },
     ],
     voice: ["Дежурная часть", "Оперативный штаб"],
   },
   {
-    category: "🔫 Группировки",
+    category: "🔫 ОПГ",
     items: [
-      { name: "ореховские", locked: false },
-      { name: "солнцевская-бригада", locked: false },
-      { name: "этнические-группы", locked: false },
+      { name: "арз-опг", locked: false },
+      { name: "бат-опг", locked: false },
+      { name: "лыт-опг", locked: false },
       { name: "вербовка", locked: false },
     ],
     voice: ["Сходняк", "Разборки"],
@@ -284,8 +287,8 @@ const Index = () => {
                     <div className="bg-[#2f3136] border-l-4 border-[#5865f2] p-3 sm:p-4 rounded">
                       <h3 className="text-white font-semibold mb-2 text-sm sm:text-base">На сервере есть:</h3>
                       <ul className="space-y-1 text-xs sm:text-sm text-[#b9bbbe]">
-                        <li>🏛️ Государственные фракции — МВД, ФСБ, Мэрия, Прокуратура</li>
-                        <li>🔫 Преступные группировки — Ореховские, Солнцевские и другие</li>
+                        <li>🏛️ Государственные фракции — Правительство, ФСБ, Армия, ГИБДД, УМВД, ЦБ, СМИ, ФСИН</li>
+                        <li>🔫 ОПГ — АРЗ, БАТ, ЛЫТ</li>
                         <li>🔧 Администрация с открытыми жалобами и заявками</li>
                         <li>🚪 Личные комнаты — создай свою или вступи в чужую</li>
                         <li>📅 Сюжетные ивенты каждую неделю</li>
@@ -440,8 +443,8 @@ const Index = () => {
                 <h3 className="text-lg sm:text-xl font-bold text-white mb-4">Фракции и роли</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                   {[
-                    { icon: "🏛️", title: "Государственные", desc: "МВД, ФСБ, Мэрия, Прокуратура, Скорая" },
-                    { icon: "🔫", title: "Преступные ОПГ", desc: "Ореховские, Солнцевские, этнические группы" },
+                    { icon: "🏛️", title: "Государственные", desc: "Правительство, ФСБ, Армия, ГИБДД, УМВД, ЦБ, СМИ, ФСИН" },
+                    { icon: "🔫", title: "ОПГ", desc: "АРЗ ОПГ, БАТ ОПГ, ЛЫТ ОПГ" },
                     { icon: "🔧", title: "Администрация", desc: "Жалобы, заявки на роль, открытый репорт" },
                     { icon: "🚪", title: "Своя комната", desc: "Создай личный канал — текстовый или голосовой" },
                   ].map((feature, index) => (
