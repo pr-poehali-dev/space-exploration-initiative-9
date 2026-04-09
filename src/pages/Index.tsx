@@ -39,24 +39,24 @@ const channels = [
   {
     category: "🏛️ Гос. фракции",
     items: [
-      { name: "правительство", locked: false },
-      { name: "фсб", locked: false },
-      { name: "армия", locked: false },
-      { name: "гибдд", locked: false },
-      { name: "умвд", locked: false },
-      { name: "цб", locked: false },
-      { name: "сми", locked: false },
-      { name: "фсин", locked: false },
+      { name: "правительство", locked: false, emoji: "🏛️" },
+      { name: "фсб", locked: false, emoji: "🕵️" },
+      { name: "армия", locked: false, emoji: "🎖️" },
+      { name: "гибдд", locked: false, emoji: "🚔" },
+      { name: "умвд", locked: false, emoji: "👮" },
+      { name: "цб", locked: false, emoji: "🏦" },
+      { name: "сми", locked: false, emoji: "📺" },
+      { name: "фсин", locked: false, emoji: "⛓️" },
     ],
     voice: ["Дежурная часть", "Оперативный штаб"],
   },
   {
     category: "🔫 ОПГ",
     items: [
-      { name: "арз-опг", locked: false },
-      { name: "бат-опг", locked: false },
-      { name: "лыт-опг", locked: false },
-      { name: "вербовка", locked: false },
+      { name: "арз-опг", locked: false, emoji: "🗡️" },
+      { name: "бат-опг", locked: false, emoji: "🦇" },
+      { name: "лыт-опг", locked: false, emoji: "🐺" },
+      { name: "вербовка", locked: false, emoji: "👥" },
     ],
     voice: ["Сходняк", "Разборки"],
   },
@@ -203,7 +203,11 @@ const Index = () => {
                           key={ch.name}
                           className="flex items-center gap-1.5 px-2 py-1 rounded text-[#8e9297] hover:text-[#dcddde] hover:bg-[#393c43] cursor-pointer group"
                         >
-                          <Hash className="w-4 h-4 flex-shrink-0" />
+                          {"emoji" in ch && ch.emoji ? (
+                            <span className="text-sm flex-shrink-0 w-4 text-center">{ch.emoji}</span>
+                          ) : (
+                            <Hash className="w-4 h-4 flex-shrink-0" />
+                          )}
                           <span className="text-sm flex-1 truncate">{ch.name}</span>
                           {ch.locked && <Lock className="w-3 h-3 text-[#72767d]" />}
                           {ch.name === "создать-свою-комнату" && (
