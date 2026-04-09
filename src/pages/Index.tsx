@@ -48,7 +48,7 @@ const channels = [
       { name: "сми", locked: false, emoji: "📺" },
       { name: "фсин", locked: false, emoji: "⛓️" },
     ],
-    voice: ["Дежурная часть", "Оперативный штаб"],
+    voice: [],
   },
   {
     category: "🔫 ОПГ",
@@ -58,7 +58,7 @@ const channels = [
       { name: "лыт-опг", locked: false, emoji: "🐺" },
       { name: "вербовка", locked: false, emoji: "👥" },
     ],
-    voice: ["Сходняк", "Разборки"],
+    voice: [],
   },
   {
     category: "🔧 Администрация",
