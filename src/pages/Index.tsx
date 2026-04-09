@@ -37,6 +37,15 @@ const channels = [
     voice: [],
   },
   {
+    category: "🎮 Общий",
+    items: [],
+    voice: [
+      "🎮 Игровая комната 1",
+      "🎮 Игровая комната 2",
+      "🎮 Игровая комната 3",
+    ],
+  },
+  {
     category: "🏛️ Гос. фракции",
     items: [
       { name: "правительство", locked: false, emoji: "🏛️" },
